@@ -112,7 +112,7 @@ namespace MyGame
 		/// <returns>false if a clicked missed the buttons. This can be used to check prior menus.</returns>
 		private static bool HandleMenuInput (int menu, int level, int xOffset)
 		{
-			if (SwinGame.KeyTyped (KeyCode.EscapeKey)) {
+			if (SwinGame.KeyTyped (KeyCode.vk_ESCAPE)) {
 				GameController.EndCurrentState ();
 				return true;
 			}
